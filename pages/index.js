@@ -1,29 +1,31 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import { Flex, Heading } from '@chakra-ui/react';
-import Image from 'next/image';
+import Nav from '../components/Nav';
+import { Flex, Box, Heading } from '@chakra-ui/react';
+import SocialBar from '../components/socialBar';
 
 export default function Home() {
     return (
-        <div>
+        <>
             <Head>
                 <title>Aries Dimaranan</title>
             </Head>
 
+            <Nav />
             <Flex
                 direction='column'
                 bg='black'
-                bgGradient="radial(rgba(80, 0, 110, 0.75), black 120%)"
+                bgGradient="linear(rgba(80, 0, 110, 0.75), black 120%)"
                 h='100vh'
-                className={styles.main}
             >
-                <Heading as='h1' size='4xl' color='#ccc' fontFamily='monospace' textShadow='0 0 5px #C8C8C8' mt='2%' ml='5%'>
-                    $Aries Dimaranan
-                </Heading>
-                <Heading as='h2' size='2xl' color='#ccc' fontFamily='monospace' textShadow='0 0 5px #C8C8C8' ml='5%'>
-                    {'>'}Full-Stack Developer
-                </Heading>
+                <Box>
+                    <Heading as='h1' size='4xl' color='#ccc' fontFamily='monospace' textShadow='0 0 5px #C8C8C8' mt='2%' ml='5%'>
+                        $Aries Dimaranan
+                    </Heading>
+                    <Heading as='h2' size='2xl' color='#ccc' fontFamily='monospace' textShadow='0 0 5px #C8C8C8' ml='5%'>
+                        {'>'}Full-Stack Developer
+                    </Heading>
+                </Box>
             </Flex>
-        </div>
+        </>
     )
 }
