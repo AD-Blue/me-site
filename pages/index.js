@@ -12,19 +12,19 @@ export default function Home() {
             <Flex
                 className={styles.main}
                 direction='column'
-                h='200vh'
+                h='350vh'
                 alignContent='center'
             >
                 <Box textAlign="center" mt='20%'>
-                    <Heading as='h1' size='4xl' color='#ccc'>
+                    <Heading as='h1' size='4xl' color='#ccc' fontSize='96px'>
                         Aries Dimaranan
                     </Heading>
-                    <Heading as='h2' size='2xl' color='#ccc'>
+                    <Heading as='h2' size='2xl' color='#ccc' fontSize='96px'>
                         Full-Stack Developer
                     </Heading>
                 </Box>
                 <Flex direction='column' mt='25%' ml='5%'>
-                    <Heading as='h3' size='xl' color='#ccc'>
+                    <Heading as='h3' size='xl' color='#ccc' fontSize='54px'>
                         Technologies I've Built With
                     </Heading>
                     <SkillList />

@@ -1,0 +1,16 @@
+.container {
+    width: 60%; /* Full width */
+    background-color: rgba(204, 204, 204, 0.4); /* Grey background */
+    border-radius: 15px 15px;
+    height: 50px;
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-top: 10px; /* Add top padding */
+    padding-bottom: 10px; /* Add bottom padding */
+    color: #bbb; /* White text color */
+    height: 50px;
+    border-radius: 15px 0 0 15px;
+    background: linear-gradient(90deg, rgba(209,131,34,1) 0%, rgba(255,242,0,1) 100%);
+}
