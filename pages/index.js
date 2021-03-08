@@ -9,20 +9,19 @@ export default function Home() {
             <Head>
                 <title>Aries Dimaranan</title>
             </Head>
-
-            <Nav />
             <Flex
                 direction='column'
-                bg='black'
-                bgGradient="linear(rgba(80, 0, 110, 0.75), black 120%)"
+                bgGradient="linear(to-br, #292839, #111222)"
                 h='100vh'
+                justify='center'
+                alignContent='center'
             >
-                <Box>
-                    <Heading as='h1' size='4xl' color='#ccc' fontFamily='monospace' textShadow='0 0 5px #C8C8C8' mt='2%' ml='5%'>
-                        $Aries Dimaranan
+                <Box textAlign="center">
+                    <Heading as='h1' size='4xl' color='#ccc'>
+                        Aries Dimaranan
                     </Heading>
-                    <Heading as='h2' size='2xl' color='#ccc' fontFamily='monospace' textShadow='0 0 5px #C8C8C8' ml='5%'>
-                        {'>'}Full-Stack Developer
+                    <Heading as='h2' size='2xl' color='#ccc'>
+                        Full-Stack Developer
                     </Heading>
                 </Box>
             </Flex>
