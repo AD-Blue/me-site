@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Flex, Box, Heading } from '@chakra-ui/react';
+import { Flex, Box, Heading, Text } from '@chakra-ui/react';
 import SkillList from '../components/SkillList';
 import styles from '../styles/Home.module.css';
 
@@ -25,9 +25,18 @@ export default function Home() {
                 </Box>
                 <Flex direction='column' mt='25%' ml='5%'>
                     <Heading as='h3' size='xl' color='#ccc' fontSize='54px'>
-                        Technologies I've Built With
+                        Hi There
                     </Heading>
-                    <SkillList />
+                    <Flex direction='row' w='100%' justify='space-between'>
+                        <Text w='40%' color='#ccc' fontSize='32px' mt='2%'>
+                            I'm a fullstack developer and computer science student at the University of Calgary. 
+                            <br />
+                            <br />
+                            I make web apps.
+                        </Text>
+                        <SkillList />
+                    </Flex>
+                    
                 </Flex>
             </Flex>
         </>
