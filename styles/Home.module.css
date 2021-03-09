@@ -24,30 +24,44 @@
 }
 
 .loadslide {
-  animation: slideLeftAnimation 1.5s;
+  animation: slideDownAnimation 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .delayedslide {
   opacity: 0;
-  animation: slideLeftAnimation 1.5s;
+  animation: slideUpAnimation 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
 
-@keyframes slideLeftAnimation {
+@keyframes slideUpAnimation {
   0% {
       opacity: 0;
-      transform: translateX(-100%);
+      transform: translateY(-100%);
   }
   50% {
       opacity: 0;
   }
   100% {
       opacity: 1;
-      transfrom: translateX(0%);
+      transfrom: translateY(0%);
+  }
+}
+
+@keyframes slideDownAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(100%);
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+      transfrom: translateY(0%);
   }
 }
 
