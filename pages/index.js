@@ -14,7 +14,7 @@ export default function Home() {
             <Flex
                 className={styles.main}
                 direction='column'
-                h='650vh'
+                h='610vh'
                 alignContent='center'
             >
                 <Box textAlign="center" mt='20%'>
@@ -55,8 +55,8 @@ export default function Home() {
                     <Heading as='h3' size='xl' fontSize='54px' color='#ccc' mt='7%' mb='5%'>
                         Know What You Want to Make? Let's Talk
                     </Heading>
-                    <Flex direction='row'>
-                        <Flex direction='column' justify='space-between' h='300px'>
+                    <Flex direction='row' w='100%'>
+                        <Flex direction='row' justify='space-between' alignItems='center' w='300px'>
                             <Link href='https://www.github.com/AD-Blue' isExternal='true'>
                                 <Image src='/images/github.png' height={120} width={120} />
                             </Link>
@@ -64,6 +64,11 @@ export default function Home() {
                                 <Image src='/images/linkedin.png' height={100} width={120} />
                             </Link>
                         </Flex>
+                        <Text ml='7%' color='#ccc' fontSize='32px'>
+                            Email
+                            <br />
+                            aasdimaranan@gmail.com
+                        </Text>
                     </Flex>
 
                 </Flex>
