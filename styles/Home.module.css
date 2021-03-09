@@ -2,6 +2,53 @@
   background: linear-gradient(135deg, #1b1d20, #3c424d, #1b1e41, #07090f);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
+  scroll-behavior: smooth;
+}
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.section {
+  scroll-behavior: smooth;
+}
+
+.temp {
+  background: rgba(255, 255, 255, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  border-radius: 50%;
+}
+
+.loadslide {
+  animation: slideLeftAnimation 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.delayedslide {
+  opacity: 0;
+  animation: slideLeftAnimation 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideLeftAnimation {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+      transfrom: translateX(0%);
+  }
 }
 
 @keyframes gradient {
