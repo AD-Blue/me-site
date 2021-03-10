@@ -7,6 +7,13 @@ const theme = extendTheme({
     heading: "Space Mono",
     body: "Space Mono",
   },
+  styles: {
+    global: {
+      body: {
+        bg: 'none'
+      }
+    }
+  }
 })
 
 function MyApp({ Component, pageProps }) {
