@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 import { Flex, Box, Heading, Text, Link } from '@chakra-ui/react';
 import SkillList from '../components/SkillList';
 import styles from '../styles/Home.module.css';
@@ -7,7 +8,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { Link as ScrollLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Home() {
     const icon = {
@@ -20,6 +21,10 @@ export default function Home() {
             fill: "rgba(255, 255, 255, 1)"
         }
     }
+
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    }, []);
 
     return (
         <>
@@ -73,8 +78,8 @@ export default function Home() {
                         Hi There
                     </Heading>
 
-                    <Flex direction='row' w='100%' justify='space-between'>
-                        <Text w='40%' color='#ccc' fontSize='32px' mt='2%'>
+                    <Flex direction='row' w='100%' justify='space-between' overflow='hidden'>
+                        <Text w='40%' color='#ccc' fontSize='32px' mt='2%' data-aos="fade-right" overflow='hidden'>
                             I'm a fullstack developer and computer science student at the University of Calgary. 
                             <br />
                             <br />

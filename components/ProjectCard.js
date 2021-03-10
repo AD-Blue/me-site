@@ -6,7 +6,7 @@ export default function ProjectCard({img, url}) {
     console.log('url: ', url)
     return (
         <Link href={url} isExternal='true'>
-                <Image src={img} width={1440} height={702} className={styles.container} />
+                <Image src={img} width={1440} height={702} className={styles.container} data-aos='fade-up' />
         </Link>
     )
 }

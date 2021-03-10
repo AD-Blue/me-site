@@ -3,7 +3,7 @@ import { List, ListItem, Text, Box, Flex } from '@chakra-ui/react';
 
 export default function SkillList() {
     return (
-        <List color='#ccc' spacing={5} w='50%'>
+        <List color='#ccc' spacing={5} w='50%'  data-aos='fade-left' overflow='hidden'>
             <ListItem fontSize='32px'>
                 <Text>
                     ReactJS
