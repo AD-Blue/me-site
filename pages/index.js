@@ -5,6 +5,9 @@ import styles from '../styles/Home.module.css';
 import ProjectCard from '../components/ProjectCard';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { Link as ScrollLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 export default function Home() {
     const icon = {
@@ -42,26 +45,29 @@ export default function Home() {
                         </Heading>
                     </Box>
                 </Box>
-                <a href='#section' className={styles.temp}>
-                    <motion.svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="64px"
-                        height="64px"
-                        className={styles.item}
-                    >
-                        <motion.path
-                            d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-                            variants={icon}
-                            initial="hidden"
-                            animate="visible"
-                            transition={{
-                                default: { duration: 2, ease: "easeInOut" },
-                                fill: { duration: 1, ease: [1, 0, 0.8, 1] }
-                              }}
-                        />
-                    </motion.svg>
-                </a>
+                <Box cursor='pointer' bg='rgba(255, 255, 255, 0.1)'
+                    ml='auto' mr='auto' mt='15%' borderRadius='50%'
+                >
+                    <ScrollLink to='section' smooth={true} duration={10}>
+                        <motion.svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="64px"
+                            height="64px"
+                        >
+                            <motion.path
+                                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                                variants={icon}
+                                initial="hidden"
+                                animate="visible"
+                                transition={{
+                                    default: { duration: 2, ease: "easeInOut" },
+                                    fill: { duration: 1, ease: [1, 0, 0.8, 1] }
+                                  }}
+                            />
+                        </motion.svg>
+                    </ScrollLink>
+                </Box>
                 <Flex direction='column' mt='14%' ml='5%' id='section' className={styles.section} pt='1%'>
                     <Heading as='h3' size='xl' color='#ccc' fontSize='54px'>
                         Hi There
