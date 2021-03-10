@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import { useEffect } from 'react';
-import { Flex, Box, Heading, Text, Link } from '@chakra-ui/react';
+import { Flex, Box, Heading, Text, Link, Image } from '@chakra-ui/react';
 import SkillList from '../components/SkillList';
 import styles from '../styles/Home.module.css';
 import ProjectCard from '../components/ProjectCard';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -104,16 +103,16 @@ export default function Home() {
                     <Heading as='h3' size='xl' fontSize={['38px', '54px']} color='#ccc' mt={['30%', '7%']} mb='5%'>
                         Know What You Want to Make? Let's Talk
                     </Heading>
-                    <Flex direction='row' w='100%'>
-                        <Flex direction='row' justify='space-between' alignItems='center' w='300px'>
+                    <Flex direction={['column', 'row']} w='100%'>
+                        <Flex direction={['row', 'row']} justify='space-between' alignItems='center' w='300px'>
                             <Link href='https://www.github.com/AD-Blue' isExternal='true'>
-                                <Image src='/images/github.png' height={120} width={120} />
+                                <Image src='\images\github.png' h={[40, 120]} w={30, 120} />
                             </Link>
                             <Link href='https://www.linkedin.com/in/aries-dimaranan-5664b91a1/' isExternal='true'>
-                                <Image src='/images/linkedin.png' height={100} width={120} />
+                                <Image src='/images/linkedin.png' h={25, 100} w={30, 120} />
                             </Link>
                         </Flex>
-                        <Text ml='7%' color='#ccc' fontSize={['24px']}>
+                        <Text ml='7%' color='#ccc' fontSize={['24px']} mt={['20%', '0%']}>
                             Email
                             <br />
                             aasdimaranan@gmail.com
