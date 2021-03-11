@@ -49,7 +49,7 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box cursor='pointer' bg='rgba(255, 255, 255, 0.1)'
-                    ml='auto' mr='auto' mt={['65%', '15%']} borderRadius='50%'
+                    ml='auto' mr='auto' mt={['65%', '15%']} borderRadius='50%' data-aos='fade' data-aos-delay='2500'
                 >
                     <ScrollLink to='section' smooth={true} duration={10}>
                         <motion.svg
@@ -72,12 +72,12 @@ export default function Home() {
                     </ScrollLink>
                 </Box>
                 <Flex direction='column' mt={['30%', '14%']} ml='5%' id='section' className={styles.section} pt={['10%', '1%']}>
-                    <Heading as='h3' size='xl' color='#ccc' fontSize={['38px', '54px']}>
+                    <Heading as='h3' size='xl' color='#ccc' fontSize={['38px', '54px']} data-aos='fade-right'>
                         Hi There
                     </Heading>
 
                     <Flex direction={['column', 'row']} w='100%' justify='space-between' overflow='hidden'>
-                        <Text w={['100%', '40%']} color='#ccc' fontSize={['24px', '32px']} mt='2%' overflow='hidden'>
+                        <Text w={['100%', '40%']} color='#ccc' fontSize={['24px', '32px']} mt='2%' overflow='hidden' data-aos='fade-up' data-aos-duration='2500'>
                             I'm a fullstack developer and computer science student at the University of Calgary. 
                             <br />
                             <br />
@@ -90,29 +90,29 @@ export default function Home() {
                         The Things I've Made
                     </Heading>
                     <Flex align='center' direction='column' mr='5%'>
-                        <Heading as='h4' size='lg' textAlign='center' color='#ccc' mb='2%'>Coffee Till <br/> Point-of-Sale</Heading>
+                        <Heading as='h4' size='lg' textAlign='center' color='#ccc' mb='2%' data-aos='fade-right'>Coffee Till <br/> Point-of-Sale</Heading>
                         <ProjectCard img="/images/coffeetill.PNG" url="https://coffee-till.netlify.app/" />
 
-                        <Heading as='h4' size='lg' color='#ccc' mb='2%' mt={['20%', '5%']}>Cookbook</Heading>
+                        <Heading as='h4' size='lg' color='#ccc' mb='2%' mt={['20%', '5%']} data-aos='fade-right'>Cookbook</Heading>
                         <ProjectCard img="/images/cookbook.PNG" url="https://aa-cookbook.herokuapp.com/" />
                         
-                        <Heading as='h4' size='lg' color='#ccc' mb='2%' mt={['20%', '5%']}>Zapr Blogs</Heading>
+                        <Heading as='h4' size='lg' color='#ccc' mb='2%' mt={['20%', '5%']} data-aos='fade-right'>Zapr Blogs</Heading>
                         <ProjectCard img="/images/zapr.PNG" url="https://zapr.netlify.app/" />
                     </Flex>
 
-                    <Heading as='h3' size='xl' fontSize={['38px', '54px']} color='#ccc' mt={['30%', '7%']} mb='5%'>
+                    <Heading as='h3' size='xl' fontSize={['38px', '54px']} color='#ccc' mt={['30%', '7%']} mb='5%' data-aos='fade-right'>
                         Know What You Want to Make? Let's Talk
                     </Heading>
-                    <Flex direction={['column', 'row']} w='100%'>
+                    <Flex direction={['column', 'row']} w='100%' overflow='hidden'>
                         <Flex direction={['row', 'row']} justify='space-between' alignItems='center' w='300px'>
                             <Link href='https://www.github.com/AD-Blue' isExternal='true'>
-                                <Image src='\images\github.png' h={[40, 120]} w={30, 120} />
+                                <Image src='\images\github.png' h={[40, 120]} w={30, 120} data-aos='fade-up' />
                             </Link>
                             <Link href='https://www.linkedin.com/in/aries-dimaranan-5664b91a1/' isExternal='true'>
-                                <Image src='/images/linkedin.png' h={25, 100} w={30, 120} />
+                                <Image src='/images/linkedin.png' h={25, 100} w={30, 120} data-aos='fade-up' data-aos-delay='350' />
                             </Link>
                         </Flex>
-                        <Text ml='7%' color='#ccc' fontSize={['24px']} mt={['20%', '0%']}>
+                        <Text ml='7%' color='#ccc' fontSize={['24px']} mt={['20%', '0%']} data-aos='fade-left'>
                             Email
                             <br />
                             aasdimaranan@gmail.com
