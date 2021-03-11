@@ -86,7 +86,7 @@ export default function Home() {
                         <SkillList />
                     </Flex>
                     
-                    <Heading as='h3' size='xl' fontSize={['38px', '54px']} color='#ccc' mt={['30%', '7%']} mb={['25%', '5%']}>
+                    <Heading as='h3' size='xl' fontSize={['38px', '54px']} color='#ccc' mt={['30%', '7%']} mb={['25%', '5%']} data-aos='fade-right'>
                         The Things I've Made
                     </Heading>
                     <Flex align='center' direction='column' mr='5%'>
