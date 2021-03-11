@@ -5,7 +5,7 @@ export default function SkillList() {
     return (
         <List color='#ccc' spacing={5} w={['100%', '50%']} mt={['20%', '0']} ml={['auto', '0']} mr={['auto', '0']} data-aos='fade-left'>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     ReactJS
                 </Text>
                 <Box className={styles.container}>
@@ -17,7 +17,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     Javascript
                 </Text>
                 <Box className={styles.container}>
@@ -29,7 +29,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     NextJS
                 </Text>
                 <Box className={styles.container}>
@@ -41,7 +41,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     Express
                 </Text>
                 <Box className={styles.container}>
@@ -53,7 +53,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     NodeJS
                 </Text>
                 <Box className={styles.container}>
@@ -65,7 +65,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     MongoDB
                 </Text>
                 <Box className={styles.container}>
@@ -77,7 +77,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     Java
                 </Text>
                 <Box className={styles.container}>
@@ -89,7 +89,7 @@ export default function SkillList() {
                 </Box>
             </ListItem>
             <ListItem fontSize='32px'>
-                <Text fontSize={['24px', '32px']}>
+                <Text fontSize={['24px', '28px', '32px']}>
                     Python
                 </Text>
                 <Box className={styles.container}>
