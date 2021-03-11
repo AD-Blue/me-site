@@ -49,7 +49,7 @@ export default function Home() {
                     </Box>
                 </Box>
                 <Box cursor='pointer' bg='rgba(255, 255, 255, 0.1)'
-                    ml='auto' mr='auto' mt={['65%', '15%']} borderRadius='50%' data-aos='fade' data-aos-delay='2500'
+                    ml='auto' mr='auto' mt={['50%', '15%']} borderRadius='50%' data-aos='fade' data-aos-delay='2500'
                 >
                     <ScrollLink to='section' smooth={true} duration={10}>
                         <motion.svg
