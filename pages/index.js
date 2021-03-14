@@ -30,7 +30,6 @@ export default function Home() {
         <Box w='100%'>
             <Head>
                 <title>Aries Dev</title>
-                <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19505208.js"></script>
             </Head>
             <Flex
                 direction='column'
