@@ -29,7 +29,12 @@ export default function Home() {
     return (
         <Box w='100%'>
             <Head>
+            <meta name='viewport' content='width=device-width, initial-scale=1' />
+            <meta name='keywords' content="Aries Dimaranan, Aries Dev, Aries Portfolio" />
+            <meta name='description' content="Full-stack developer Aries Dimaranan" />
+            <meta charSet='utf-8' />
                 <title>Aries Dev</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Flex
                 direction='column'
